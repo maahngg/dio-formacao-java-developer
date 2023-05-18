@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/desafioControleFluxo.iml" filepath="$PROJECT_DIR$/desafioControleFluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desafio_controle_fluxo.iml" filepath="$PROJECT_DIR$/desafio_controle_fluxo.iml" />
     </modules>
   </component>
 </project>
