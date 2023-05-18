@@ -10,7 +10,7 @@ public class ProcessoSeletivo {
 
     static void entrarEmContato(String candidato) {
         int tentativasRealizadas = 0;
-        boolean continuarTentando = true;
+        boolean continuarTentando;
         boolean atendeu = false;
 
         do {
