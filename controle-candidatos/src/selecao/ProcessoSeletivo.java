@@ -14,13 +14,13 @@ public class ProcessoSeletivo {
     static void entrarEmContato(String candidato) {
         int tentativasRealizadas = 0;
         boolean continuarTentando;
-        boolean atendeu = false;
+        boolean atendeu;
 
         do {
             atendeu = atender();
             continuarTentando = !atendeu;
 
-            if (continuarTentando){
+            if (continuarTentando) {
                 tentativasRealizadas++;
             } else {
                 System.out.println("CONTATO REALIZADO COM SUCESSO");
@@ -28,15 +28,15 @@ public class ProcessoSeletivo {
         } while (continuarTentando && tentativasRealizadas < 3);
 
         if (atendeu) {
-            System.out.println("Conseguimos contato com "+candidato+" na tentativa nº "+tentativasRealizadas);
+            System.out.println("Conseguimos contato com " + candidato + " na tentativa nº " + tentativasRealizadas);
         } else {
-            System.out.println("Não conseguimos contato com "+candidato+", número máximo de tentativas "+tentativasRealizadas);
+            System.out.println("Não conseguimos contato com " + candidato + ", número máximo de tentativas " + tentativasRealizadas);
         }
 
     }
 
     static boolean atender() {
-        return new Random().nextInt(3)==1;
+        return new Random().nextInt(3) == 1;
     }
 
     static void imprimirSelecionados() {
